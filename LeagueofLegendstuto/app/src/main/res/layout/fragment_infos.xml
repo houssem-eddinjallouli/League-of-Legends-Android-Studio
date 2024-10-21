@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:paddingTop="400dp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="Whenever playing solo or co-op with friends, League of Legends is an intense and highly competitive strategiy/action game designed for those who like to fight for victory." />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backgroundleague"/>
+
+</FrameLayout>

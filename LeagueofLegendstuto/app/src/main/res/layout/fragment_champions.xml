@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChampionsFragment">
+
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="search by name"
+        android:id="@+id/searchchamp"
+        android:iconifiedByDefault="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp">
+      <androidx.appcompat.widget.AppCompatButton
+          android:background="@drawable/btnall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ALL"
+          android:textColor="@color/white"
+          android:textSize="20dp"
+          android:textStyle="bold"
+          android:id="@+id/allfilter"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/topfilter"
+            android:layout_weight="1"
+            android:src="@drawable/top"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/junglefilter"
+            android:src="@drawable/jungle"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/middlefilter"
+            android:src="@drawable/middle"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/adcfilter"
+            android:src="@drawable/adc"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/supportfilter"
+            android:src="@drawable/support"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listchamp"/>
+</FrameLayout>
